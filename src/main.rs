@@ -11,7 +11,7 @@ fn count_matches(winning_numbers: &HashSet<&str>, your_numbers: &HashSet<&str>) 
 fn main() -> io::Result<()> {
     let start = Instant::now();
 
-    let path = Path::new("/home/siphiwe/PycharmProjects/advent_2023_four/lotto.txt");
+    let path = Path::new("lotto.txt");
     let file = File::open(&path)?;
     let reader = io::BufReader::new(file);
 
